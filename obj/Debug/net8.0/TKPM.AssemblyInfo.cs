@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TKPM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c7f3623ff31a0f1caa284465b1b947244d92428")]
 [assembly: System.Reflection.AssemblyProductAttribute("TKPM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TKPM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
