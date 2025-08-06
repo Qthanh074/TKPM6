@@ -1,0 +1,36 @@
+﻿@model TKPM.Models.Product
+@{
+    ViewData["Title"] = "Sửa sản phẩm";
+}
+
+<h2>Sửa sản phẩm</h2>
+
+<div class="card mx-auto" style="max-width:600px;">
+    <div class="card-body">
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="mb-3">
+                <label class="form-label">Tên</label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Giá</label>
+                <input asp-for="Price" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mô tả</label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Ảnh (URL)</label>
+                <input asp-for="ImageUrl" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Quà tặng</label>
+                <input asp-for="Gift" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Cập nhật</button>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </form>
+    </div>
+</div>

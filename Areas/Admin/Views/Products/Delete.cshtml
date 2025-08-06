@@ -1,0 +1,35 @@
+﻿@model TKPM.Models.Product
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+}
+
+<h2>Bạn có chắc muốn xóa sản phẩm này?</h2>
+
+<div class="card" style="max-width:600px; margin:auto;">
+    <div class="card-body">
+        <h4 class="card-title">@Model.Name</h4>
+        <p class="card-text">Giá: @Model.Price.ToString("N0") VNĐ</p>
+        <p class="card-text">@Model.Description</p>
+        <img src="@Model.ImageUrl" width="150" class="mb-3" />
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger">Xóa</button>
+            <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+        </form>
+    </div>
+</div>
+
+
+@section Styles {
+    <style>
+        .card {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+}
